@@ -17,7 +17,7 @@ a {
 header {
     width: 100%;
     height: 100px;
-    padding: 15px 3%;
+    padding: 15px clamp(10px, 5%, 30px);
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
     position: absolute;
@@ -35,7 +35,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
 }
@@ -52,7 +52,20 @@ nav a {
     padding: 8px 15px;
 }
 
+header img {
+    height:40px;
+}
 
+@media screen and (min-width: 750px) {
+
+    nav {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+}
 
 
 /* Banner */
@@ -61,7 +74,7 @@ nav a {
     height: 112vh;
     min-height: 700px;
     max-height: 150vw;
-    background-image: url(./assets/foliage-in-city.png);
+    background-image: url(./assets/high-res-banner.png);
     background-position: 50% 10%;
     background-size: 200%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -105,4 +118,55 @@ nav a {
     #banner {
         background-size: 100vw;
     }
+}
+
+
+/* Mission */
+
+#mission {
+    width: 100%;
+    max-width: calc(1200px + 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
+#mission img, .mission-text {
+    width: 80%;
+    margin: 30px 0;
+}
+
+.mission-text h2 {
+    width: 250px;
+    padding-left: 15px;
+    border-left: 6px solid rgb(104, 192, 104);
+}
+
+.stylish {
+    color: rgb(104, 192, 104);
+}
+
+.mission-text p {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 900px) {
+
+    #mission {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    #mission img {
+        width: 50%;
+    }
+
+    .mission-text {
+        width: 40%;
+        margin-left: 50px;
+    }
+
 }
