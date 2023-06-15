@@ -12,6 +12,7 @@ a {
 }
 
 
+
 /* Header */
 
 header {
@@ -170,3 +171,122 @@ header img {
     }
 
 }
+
+
+/* Models */
+
+#models {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#models h2 {
+    margin-bottom: 80px;
+}
+
+.model {
+    width: 80%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.model img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.model h3 {
+    font-size: 28px;
+    margin: 40px 0 20px;
+}
+
+.model p {
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 750px) {
+
+    .model {
+        flex-direction: row-reverse;
+        justify-content: center;
+        max-width: 1200px;
+    }
+
+    .model img {
+        width: 50%;
+        max-width: 400px;
+        margin-left: 80px;
+    }
+
+    .model-text {
+        width: 40%;
+    }
+}
+
+
+/* Technical Specs */
+
+#specs {
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#specs h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.specs-slideshow {
+    width: 50%;
+    padding: 0 50px 30px 0;
+    float: left;
+}
+
+.specs-slideshow-content {    
+    padding: 0 50px;
+    position: relative;
+}
+
+.specs-slideshow-content figure img {
+    width: 100%;
+}
+
+.specs-slideshow-content figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.arrow-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow-btns button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.arrow-btns button img {
+    height: 5vw;
+    width: 3.5vw;
+}
+
+.prev img {
+    transform: rotate(180deg);
+}
+
