@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 15px 3%;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    position: absolute;
+    z-index: 10;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    font-weight: bold;
+    color: white;
+    margin-left: 10%;
+}
+
+#indiegogo {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+
+
+
+
+/* Banner */
+
+#banner {
+    height: 112vh;
+    min-height: 700px;
+    max-height: 150vw;
+    background-image: url(./assets/foliage-in-city.png);
+    background-position: 50% 10%;
+    background-size: 200%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+#banner p {
+    color: white;
+    font-weight: bold;
+    font-size: clamp(10px, 7vw, 40px);
+    width: clamp(100px, 65%, 500px);
+    position: absolute;
+    left: 56%;
+    top: clamp(50px, 40vw, 250px);
+    transform: translate(-50%,-50%);
+}
+
+
+@media screen and (min-width: 500px) {
+
+    #banner {
+        background-size: clamp(100px, 170%, 1800px);
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    #banner {
+        background-position: 30% 45%;
+    }
+
+    #banner p {
+        top: clamp(300px, 40vw, 300px);
+        left: clamp(300px, 25%, 1000px);
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    #banner {
+        background-size: 100vw;
+    }
+}
