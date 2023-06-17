@@ -231,25 +231,25 @@ header img {
 
 /* Technical Specs */
 
-#specs {
-    width: 80%;
-    max-width: 950px;
-    margin: 0 auto;
-}
-
 #specs h2 {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 50px 0;
+}
+
+#specs p {
+    width: 80%;
+    max-width: 950px;
+    margin: 40px auto; 
+    line-height: 1.5;
 }
 
 .specs-slideshow {
-    width: 50%;
-    padding: 0 50px 30px 0;
-    float: left;
+    background-color: #2b2b2b;
+    padding: 40px 10%;
 }
 
 .specs-slideshow-content {    
-    padding: 0 50px;
+    padding: 0 15%;
     position: relative;
 }
 
@@ -260,7 +260,9 @@ header img {
 .specs-slideshow-content figcaption {
     font-weight: bold;
     text-align: center;
+    line-height: 1.5;
     margin-top: 20px;
+    color: white;
 }
 
 .arrow-btns {
@@ -282,11 +284,51 @@ header img {
 }
 
 .arrow-btns button img {
-    height: 5vw;
-    width: 3.5vw;
+    height: 7vw;
+    filter: invert();
 }
 
 .prev img {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
+}
+
+.next img {
+    transform: rotate(270deg);
+}
+
+@media screen and (min-width: 750px) {
+
+    #specs {
+        width: 80%;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    #specs p {
+        width: 100%;
+        max-width: none;
+        margin: 0; 
+    }
+
+    .specs-slideshow {
+        width: 50%;
+        padding: 0 3% 30px 0;
+        float: left;
+        background-color: transparent;
+    }
+
+    .specs-slideshow-content {    
+        padding: 0 60px;
+    }
+
+    .arrow-btns button img {
+        width: 50%;
+        height: auto;
+        filter: none;
+    }
+
+    .specs-slideshow-content figcaption {
+        color: black;
+    }
 }
 
