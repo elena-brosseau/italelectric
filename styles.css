@@ -72,13 +72,13 @@ header img {
 /* Banner */
 
 #banner {
-    height: 112vh;
+    height: calc(100vh + 100px);
     min-height: 700px;
     max-height: 150vw;
     background-image: url(./assets/high-res-banner.png);
     background-position: 50% 10%;
     background-size: 200%;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
     overflow: hidden;
     position: relative;
 }
@@ -239,7 +239,7 @@ header img {
 #specs p {
     width: 80%;
     max-width: 950px;
-    margin: 40px auto; 
+    margin: 40px auto 80px; 
     line-height: 1.5;
 }
 
@@ -329,6 +329,78 @@ header img {
 
     .specs-slideshow-content figcaption {
         color: black;
+    }
+}
+
+
+/* Our Story */
+
+#story {
+    font-size: 0;
+    margin: 50px 0;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+    overflow: hidden;
+}
+
+#story h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#story img {
+    width: 100%;
+    margin: 0;
+}
+
+.story-content {
+    background-color: #2b2b2b;
+    padding: 40px 10% 150px;
+}
+
+#story p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    color: white;
+}
+
+#story button {
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 750px) {
+
+    #story {
+        background-image: url(./assets/wkshop\ 1.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 100px 0;
+    }
+
+    #story img {
+        display: none;
+    }
+
+    .story-content {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 150px 10% 250px;
+    }
+
+    .story-block {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .story-text {
+        column-count: 2;
+        column-gap: 40px;
     }
 }
 
