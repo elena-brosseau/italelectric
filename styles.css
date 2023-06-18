@@ -21,7 +21,7 @@ header {
     padding: 15px clamp(10px, 5%, 30px);
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-    position: absolute;
+    position: fixed;
     z-index: 10;
 }
 
@@ -33,6 +33,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.lobster {
+    font-family: Lobster, Inter, Sans-Serif;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 nav {
@@ -130,7 +136,7 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px auto;
+    margin: 50px auto 100px;
 }
 
 #mission img, .mission-text {
@@ -159,6 +165,7 @@ header img {
         flex-direction: row;
         justify-content: center;
         padding: 0 5%;
+        margin: 100px auto;
     }
 
     #mission img {
