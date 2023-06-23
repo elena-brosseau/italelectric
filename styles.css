@@ -272,6 +272,8 @@ header img {
     position: relative;
     height: 87vw;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .slider figure {
@@ -523,7 +525,7 @@ footer {
 
 .right-footer {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     display: none;
     flex-wrap: wrap;
     justify-content: flex-end;
