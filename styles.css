@@ -69,9 +69,33 @@ nav a {
 
 header img {
     height: 40px;
+    filter: opacity(.6);
+    position: fixed;
+    right: clamp(10px, 5%, 30px);
 }
 
-@media screen and (min-width: 750px) {
+/* Open Mobile Menu */
+
+header.open {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+header.open nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header.open nav a {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 800px) {
 
     nav {
         display: flex;
@@ -542,4 +566,39 @@ footer {
     .right-footer {
         display: flex;
     }
+}
+
+
+
+
+/* Order and Indiegogo Pages */
+
+
+.info-page {
+    width: 100vw;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 620px;
+    background-image: url(./assets/info-page-bg.png);
+    background-size: cover;
+    background-position: 50% 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-page p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    bottom: 100px;
+    line-height: 1.5;
+}
+
+.info-page a {
+    text-decoration: underline;
+    color: yellow;
 }
