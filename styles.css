@@ -68,10 +68,11 @@ nav a {
 }
 
 header img {
-    height: 40px;
+    height: 35px;
     filter: opacity(.6);
     position: fixed;
     right: clamp(10px, 5%, 30px);
+    cursor: pointer;
 }
 
 /* Open Mobile Menu */
@@ -80,6 +81,7 @@ header.open {
     width: 100vw;
     height: 100vh;
     background-color: white;
+    position: fixed;
 }
 
 header.open nav {
