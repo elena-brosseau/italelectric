@@ -296,7 +296,7 @@ header.open nav a {
 
 .slider {
     position: relative;
-    height: 87vw;
+    height: 100vw;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -308,6 +308,7 @@ header.open nav a {
 
 .slider figure img {
     width: 100%;
+    padding: 0 1px;
 }
 
 .slider figcaption {
@@ -375,8 +376,8 @@ header.open nav a {
     }
 
     .slider {
-        height: 43vw;
-        max-height: 500px;
+        height: 48vw;
+        max-height: 550px;
         display: flex;
         align-items: center;
     }
